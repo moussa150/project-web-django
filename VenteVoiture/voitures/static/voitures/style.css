@@ -1,0 +1,118 @@
+
+.carte{
+    
+    /* float: left;
+    width: 1500px;
+    height: 1000px; 
+     margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em; */
+    margin-bottom: 2em;
+    margin-top: 2em;
+    min-height: 600px;
+   /* width: max-content; */
+    overflow: hidden;
+    display: inline-block;
+    /* display: flex; */
+  
+
+}  
+
+.detailvoiture{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 1500px;
+    height: 575px;
+}
+
+.detailname{
+    color: white;
+}
+.li-detail{
+    color: white;
+    font-size: larger;
+}
+
+.siderow{
+    
+    margin-top: 2em;
+    width: 1000px;
+    height: 450px;
+}
+
+
+html {
+    height: 100%;
+}
+
+body{
+    
+    
+    
+    
+ background-image: url("https://img.pikbest.com/backgrounds/20190418/simple-car-sales-green-background-image_1809069.jpg!bwr800");
+  
+    /* Full height */
+    
+  
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    
+    /* background-color: brown; */
+  }
+  
+.formvoiture{
+    height: 600px;
+}
+
+.fvoiture{
+
+    width: 600px;
+    padding: 60px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+
+}
+label{
+    background-color: transparent;
+    color:white;
+}
+input{
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    border-color: white;
+}
+
+select{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius: 15px;
+}
+option{
+    color: black;
+}
+
+.h1{
+    color: White;
+}
+
+.supprimer{
+    width: 1000px;
+    height: 550px;
+    
+}
+
+.TextSup{
+    color: white;
+}
+
+/* .navi{
+    display: flex;
+    flex-wrap: wrap;
+} */

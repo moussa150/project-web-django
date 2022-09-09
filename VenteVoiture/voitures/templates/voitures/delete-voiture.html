@@ -1,0 +1,12 @@
+{% extends 'voitures/base.html' %}
+{% block content %}
+<div class="container supprimer mt-5 mb-5">
+    <h1 class="TextSup">Etes vous sure de supprimer ce Car</h1>
+
+    <form action="" method="post">
+        {%csrf_token%}
+        <input type="submit" class="btn btn-danger" value="Supprimer">
+    </form>
+</div>
+
+{% endblock%}

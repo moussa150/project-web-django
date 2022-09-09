@@ -1,0 +1,37 @@
+{% extends 'voitures/base.html' %}
+{% block content %}
+<div class="container carte">
+        
+    <div class="row">
+        {% for voiture in voitures %}
+        <div class="col-lg-4">
+            <div class="card siderow" style="width: 20rem;">
+                <img src="{{voiture.image}}" class="card-img-top" alt="..." width="100px" height="200px">
+                <div class="card-body">
+                  <h5 class="card-title">{{voiture.name | upper}}</h5>
+                  <ul>
+                      <li>
+                          Price:
+                          {{voiture.price}} Millions Fcfa
+                      </li>
+                      <li>
+                        Year_Created:
+                        {{voiture.year_created}}
+                    </li>
+                  </ul>
+                  <a href="{% url 'detail-voiture' voiture.id %}" class="btn btn-info ml-3">voir plus..</a>
+                  <a href="{% url 'update-voiture' voiture.id %}" class="btn btn-success ml-3">Modifier</a>
+                  <a href="{% url 'delete-voiture' voiture.id %}" class="btn btn-danger ml-3 mt-2">Supprimer</a>
+                </div>
+              </div>
+        </div>
+        
+        {% endfor %}
+    </div>
+    
+</div>
+
+    
+    
+{% endblock %}
+        

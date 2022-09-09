@@ -1,0 +1,26 @@
+{% extends 'voitures/base.html' %}
+{% block content %}
+
+        
+        <div class="container detailvoiture">
+            <h1 class="detailname">{{voiture.name}}</h1>
+            <img src="{{voiture.image}}" alt="" width="600px" height="300px">
+            <ul>
+                <li class="li-detail">
+                    Model: {{voiture.model}}
+                </li>
+                <li class="li-detail">
+                    Mark: {{voiture.mark}}
+                </li>
+                <li class="li-detail">
+                    Price: {{voiture.price}} Millions Fcfa
+                </li>
+                <li class="li-detail">
+                    Annee: {{voiture.year_created}}
+                </li>
+                <a href="{% url 'update-voiture' voiture.id %}" class="btn btn-success ml-3">Modifier</a>
+                  <a href="{% url 'delete-voiture' voiture.id %}" class="btn btn-danger ml-3 mt-2">Supprimer</a>
+            </ul>
+        </div>
+
+{% endblock %}

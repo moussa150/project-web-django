@@ -1,0 +1,13 @@
+{% extends 'voitures/base.html' %}
+{% block content %}
+<div class="container ml-5 mt-5 mb-5 formvoiture">
+    <div class="row fvoiture">
+        <h1 class="h1 mb-5">Update The Car</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" class="btn-success" value="Modifier">
+        </form>
+    </div>
+</div>
+{% endblock %}

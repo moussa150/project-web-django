@@ -1,0 +1,41 @@
+{% extends 'voitures/base.html' %}
+
+{% block content %}
+<div class="container ml-5 mt-5 mb-5 formvoiture">
+    <div class="row fvoiture">
+        <form action="" method="post">
+            {% csrf_token %}
+             {{form.as_p}} 
+            <input type="submit" class="btn btn-success" value="Enregistrer">
+            <!-- <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input formControlName="firstname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Mark</label>
+                <select class="form-control form-control-lg">
+                    <option>Peogeot</option>
+                    <option>Renault</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Model</label>
+                <input formControlName="firstname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Price</label>
+                <input formControlName="firstname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Year Created</label>
+                <input formControlName="firstname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <label for="exampleInputEmail1" class="form-label">Image </label>
+
+            <input type="submit" value="Enregistrer"> -->
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}
